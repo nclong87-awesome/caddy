@@ -21,15 +21,15 @@ jobs:
       uses: peter-evans/repository-dispatch@v2
       with:
         token: ${{ secrets.REPO_DISPATCH_TOKEN }}
-        repository: caddyserver/dist
+        repository: nclong87-awesome/dist
         event-type: release-tagged
         client-payload: '{"tag": "${{ github.event.release.tag_name }}"}'
 
-    - name: Trigger event on caddyserver/caddy-docker
-      uses: peter-evans/repository-dispatch@v2
-      with:
-        token: ${{ secrets.REPO_DISPATCH_TOKEN }}
-        repository: caddyserver/caddy-docker
-        event-type: release-tagged
-        client-payload: '{"tag": "${{ github.event.release.tag_name }}"}'
+    # - name: Trigger event on caddyserver/caddy-docker
+    #   uses: peter-evans/repository-dispatch@v2
+    #   with:
+    #     token: ${{ secrets.REPO_DISPATCH_TOKEN }}
+    #     repository: caddyserver/caddy-docker
+    #     event-type: release-tagged
+    #     client-payload: '{"tag": "${{ github.event.release.tag_name }}"}'
 
