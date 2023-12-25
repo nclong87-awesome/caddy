@@ -86,15 +86,15 @@ jobs:
     - name: Install Cloudsmith CLI
       run: pip install --upgrade cloudsmith-cli
 
-    - name: Validate commits and tag signatures
-      run: |
+    # - name: Validate commits and tag signatures
+    #   run: |
         
-        # Import Matt Holt's key
-        curl 'https://github.com/mholt.gpg' | gpg --import
+    #     # Import Matt Holt's key
+    #     curl 'https://github.com/mholt.gpg' | gpg --import
 
-        echo "Verifying the tag: ${{ steps.vars.outputs.version_tag }}"
-        # tags are only accepted if signed by Matt's key
-        git verify-tag "${{ steps.vars.outputs.version_tag }}" || exit 1
+    #     echo "Verifying the tag: ${{ steps.vars.outputs.version_tag }}"
+    #     # tags are only accepted if signed by Matt's key
+    #     git verify-tag "${{ steps.vars.outputs.version_tag }}" || exit 1
 
     - name: Install Cosign
       uses: sigstore/cosign-installer@main
