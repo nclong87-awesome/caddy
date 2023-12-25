@@ -13,17 +13,17 @@
 <h3 align="center">Every site on HTTPS</h3>
 <p align="center">Caddy is an extensible server platform that uses TLS by default.</p>
 <p align="center">
-	<a href="https://github.com/caddyserver/caddy/actions/workflows/ci.yml"><img src="https://github.com/caddyserver/caddy/actions/workflows/ci.yml/badge.svg"></a>
-	<a href="https://pkg.go.dev/github.com/caddyserver/caddy/v2"><img src="https://img.shields.io/badge/godoc-reference-%23007d9c.svg"></a>
+	<a href="https://github.com/nclong87-awesome/caddy/actions/workflows/ci.yml"><img src="https://github.com/nclong87-awesome/caddy/actions/workflows/ci.yml/badge.svg"></a>
+	<a href="https://pkg.go.dev/github.com/nclong87-awesome/caddy/v2"><img src="https://img.shields.io/badge/godoc-reference-%23007d9c.svg"></a>
 	<br>
 	<a href="https://twitter.com/caddyserver" title="@caddyserver on Twitter"><img src="https://img.shields.io/badge/twitter-@caddyserver-55acee.svg" alt="@caddyserver on Twitter"></a>
 	<a href="https://caddy.community" title="Caddy Forum"><img src="https://img.shields.io/badge/community-forum-ff69b4.svg" alt="Caddy Forum"></a>
 	<br>
-	<a href="https://sourcegraph.com/github.com/caddyserver/caddy?badge" title="Caddy on Sourcegraph"><img src="https://sourcegraph.com/github.com/caddyserver/caddy/-/badge.svg" alt="Caddy on Sourcegraph"></a>
+	<a href="https://sourcegraph.com/github.com/nclong87-awesome/caddy?badge" title="Caddy on Sourcegraph"><img src="https://sourcegraph.com/github.com/nclong87-awesome/caddy/-/badge.svg" alt="Caddy on Sourcegraph"></a>
 	<a href="https://cloudsmith.io/~caddy/repos/"><img src="https://img.shields.io/badge/OSS%20hosting%20by-cloudsmith-blue?logo=cloudsmith" alt="Cloudsmith"></a>
 </p>
 <p align="center">
-	<a href="https://github.com/caddyserver/caddy/releases">Releases</a> ·
+	<a href="https://github.com/nclong87-awesome/caddy/releases">Releases</a> ·
 	<a href="https://caddyserver.com/docs/">Documentation</a> ·
 	<a href="https://caddy.community">Get Help</a>
 </p>
@@ -79,7 +79,7 @@
 
 ## Install
 
-The simplest, cross-platform way to get started is to download Caddy from [GitHub Releases](https://github.com/caddyserver/caddy/releases) and place the executable file in your PATH.
+The simplest, cross-platform way to get started is to download Caddy from [GitHub Releases](https://github.com/nclong87-awesome/caddy/releases) and place the executable file in your PATH.
 
 See [our online documentation](https://caddyserver.com/docs/install) for other install instructions.
 
@@ -94,7 +94,7 @@ Requirements:
 _**Note:** These steps [will not embed proper version information](https://github.com/golang/go/issues/29228). For that, please follow the instructions in the next section._
 
 ```bash
-$ git clone "https://github.com/caddyserver/caddy.git"
+$ git clone "https://github.com/nclong87-awesome/caddy.git"
 $ cd caddy/cmd/caddy/
 $ go build
 ```
@@ -127,9 +127,9 @@ $ xcaddy build
 
 1. Create a new folder: `mkdir caddy`
 2. Change into it: `cd caddy`
-3. Copy [Caddy's main.go](https://github.com/caddyserver/caddy/blob/master/cmd/caddy/main.go) into the empty folder. Add imports for any custom plugins you want to add.
+3. Copy [Caddy's main.go](https://github.com/nclong87-awesome/caddy/blob/master/cmd/caddy/main.go) into the empty folder. Add imports for any custom plugins you want to add.
 4. Initialize a Go module: `go mod init caddy`
-5. (Optional) Pin Caddy version: `go get github.com/caddyserver/caddy/v2@version` replacing `version` with a git tag, commit, or branch name.
+5. (Optional) Pin Caddy version: `go get github.com/nclong87-awesome/caddy/v2@version` replacing `version` with a git tag, commit, or branch name.
 6. (Optional) Add plugins by adding their import: `_ "import/path/here"`
 7. Compile: `go build`
 
@@ -182,7 +182,7 @@ The docs are also open source. You can contribute to them here: https://github.c
 
 - Individuals can exchange help for free on our community forum at https://caddy.community. Remember that people give help out of their spare time and good will. The best way to get help is to give it first!
 
-Please use our [issue tracker](https://github.com/caddyserver/caddy/issues) only for bug reports and feature requests, i.e. actionable development items (support questions will usually be referred to the forums).
+Please use our [issue tracker](https://github.com/nclong87-awesome/caddy/issues) only for bug reports and feature requests, i.e. actionable development items (support questions will usually be referred to the forums).
 
 
 
